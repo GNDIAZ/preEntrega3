@@ -79,6 +79,38 @@
         border-radius: 20px;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2)
       }
+      @media screen and (max-width: 399px) {
+        .inicio {   
+        grid-template-rows: 2.5fr 2.5fr;    
+        gap: 30px 10px;      
+        grid-template-areas:
+              
+             
+        "fondo fondo fondo"
+              
+             
+        "icono1 icono2 icono3";
+          }
+        
+          
+          } 
+        .iconos {
+            
+           
+        grid-template-columns: 1fr 1fr 1fr; 
+          }
+        
+        .iconoTel,  
+        .iconoDireccion,
+        .iconoHorario {   
+        width: 180px;   
+        height: 180px;      
+        justify-content: center;    
+        .pieDIcono {            
+        font-size: 14px;
+            }
+          }
+        
      
       
     
