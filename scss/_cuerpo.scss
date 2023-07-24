@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+//inicio
+.inicio{
+  .iconos {  display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 3.5fr 2fr;
+    grid-auto-columns: 1fr;
+    gap: 50px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "fondo fondo fondo"
+      "icono1 icono2 icono3";
+      .fondo { grid-area: fondo;
+        display: grid; 
+      .pieDIcono{
+        font-size: $imprenta;
+        color: $azul-titulo;
+      }    
+      
+     
+      }
+        .iconoTel { grid-area: icono1;  
+        width: 230px;
+        height: 210px;
+        justify-content: center;
+        .pieDIcono{
+          font-size: $imprenta;
+          color: $azul-titulo;
+          
+        }
+      .iconoTel:hover{
+        background-color: aqua;
+      }
+      }  
+       }  
+      .iconoDireccion { grid-area: icono2;
+        width: 230px;
+        height: 230px;
+        justify-content: center;
+        .pieDIcono{
+          font-size: $imprenta;
+          color: $azul-titulo;
+        }
+      
+      }
+      
+      .iconoHorario { grid-area: icono3;
+        width: 230px;
+        height: 210px;
+        justify-content: center;
+        .pieDIcono{
+          font-size: $imprenta;
+          color: $azul-titulo;
+        }
+      
+      }
+      .iconoTel:hover{
+        background-color: $fondo-hover;
+        
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2)
+      
+
+      }
+      }
+      .iconoDireccion:hover{
+        background-color: $fondo-hover;
+        color: white;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2)
+      }
+      .iconoHorario:hover{
+        background-color: $fondo-hover;
+        color: white;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2)
+      }
+     
+      
+    
+  
+
+
+
+//NOSOTRAS
+.nosotras {
+  display: flex;
+  align-items: center; 
+  background-image: url(https://media.istockphoto.com/id/1370544962/es/foto/fondo-de-papel-blanco-textura-de-cart%C3%B3n-fibroso-para-scrapbooking.jpg?s=612x612&w=0&k=20&c=Z38W9VpkMgSG-hmqYVNpKfcxmPQFKZZDsODhfksInSw=);
+  
+  .texto {
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    transform: rotate(-10deg);
+    display: flex;
+    flex: 1; 
+    padding: 100px;
+    margin: 100px;
+    font-size: 14px;
+  
+   
+    font-display: unset;
+    background-color: aqua;
+  }
+
+  .card {
+    max-width: 800px;
+    .col-md-4 {
+      img.nosImg {
+        transform: rotate(14deg);
+        width: 300px; 
+      }
+    }
+  }
+}
+
+
+
+
+//Servicios
+main{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  //background: rgb(23, 118, 219);
+  background-image: url(https://media.istockphoto.com/id/1370544962/es/foto/fondo-de-papel-blanco-textura-de-cart%C3%B3n-fibroso-para-scrapbooking.jpg?s=612x612&w=0&k=20&c=Z38W9VpkMgSG-hmqYVNpKfcxmPQFKZZDsODhfksInSw=);
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #0f0fa6;
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(36, 13, 129, 0.4);
+  text-align: center;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(15, 80, 118);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card .back .link a {
+  color: #f3f3f3;
+}
+
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .back p {
+  letter-spacing: 1px;
+} 
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+
+  //Turnos
+  .turno{ 
+    display: flex;
+   height: 500px;
+   background-image: url(https://cdn.pixabay.com/photo/2017/10/26/23/39/family-2892797_1280.png);
+   justify-content: center;
+ 
+   .botonTurno{
+   
+    display: flex;
+    display: block;
+    
+
+   }
+    
+       
+    }
+
+
+
+
+    //contacto
+    .contacto{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        background-image: url(https://media.istockphoto.com/id/1370544962/es/foto/fondo-de-papel-blanco-textura-de-cart%C3%B3n-fibroso-para-scrapbooking.jpg?s=612x612&w=0&k=20&c=Z38W9VpkMgSG-hmqYVNpKfcxmPQFKZZDsODhfksInSw=);
+        align-items: flex-end;
+        .dirCosultorio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .verMapa{
+            display: flex;
+            align-items: flex-end;
+            .boton{
+                background-color: rgb(115, 44, 196);
+                
+                a{
+                    color: white;
+
+                }
+            }
+            
+        }
+    }
+    @media (max-width: 600px) {
+        .contacto {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .contacto .verMapa {
+          margin-top: 10px;
+        }
+      }  
+ 
+
+    
+  
+
+  
+  
+  
+  
+    
+
+
+        
+    
+  
+  
+  
+  
