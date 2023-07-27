@@ -1,103 +1,103 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+// *{
+//     margin: 0;
+//     padding: 0;
+// }
 
 //PAGINA INCIO
 
- .header {
-     display: flex;
-     align-items: center;
-     flex-direction: column;
+//  .header {
+//      display: flex;
+//      align-items: center;
+//      flex-direction: column;
    
   
-     .logo{
-         display: flex;
-         flex-direction:row;
-         align-items: center;
-         padding: 10px;
+//      .logo{
+//          display: flex;
+//          flex-direction:row;
+//          align-items: center;
+//          padding: 10px;
         
-         img{
-             width: 100px;
-             margin-bottom: 0px;
-         }
-         .nombre{
-             color:$azul-celeste;
-             font-family: cursive;
+//          img{
+//              width: 100px;
+//              margin-bottom: 0px;
+//          }
+//          .nombre{
+//              color:$azul-celeste;
+//              font-family: cursive;
             
-         }
+//          }
 
-     }
+//      }
     
-     nav{     
-         ul{
-             display: flex;
-             list-style: none;
-             flex-wrap: wrap;
-             justify-content: space-around;
-             flex-direction: column;
+//      nav{     
+//          ul{
+//              display: flex;
+//              list-style: none;
+//              flex-wrap: wrap;
+//              justify-content: space-around;
+//              flex-direction: column;
          
-         li{
-             margin: 10px;
+//          li{
+//              margin: 10px;
          
             
 
-             a{
-                 text-decoration: none;
-                 color:$azul-oscuro;
-                 &:focus{
-                     //outline: 2px solid rgb(31, 24, 226);
-                     font-size: 15px;
-                     box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
-                 }
-             }
+//              a{
+//                  text-decoration: none;
+//                  color:$azul-oscuro;
+//                  &:focus{
+//                      //outline: 2px solid rgb(31, 24, 226);
+//                      font-size: 15px;
+//                      box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+//                  }
+//              }
         
-         }
+//          }
        
-         }
-     }
+//          }
+//      }
 
-     h1{
-         color:$azul-celeste;
-         width:100px;
-         margin: 40px;
-         padding: 40px;
-         font-size: 24px;
-     }
+//      h1{
+//          color:$azul-celeste;
+//          width:100px;
+//          margin: 40px;
+//          padding: 40px;
+//          font-size: 24px;
+//      }
     
     
 
-     }
+//      }
 
-  @media (min-width: 600px) {
-     .header {
-     display: flex;
-     align-items:center;
-     flex-direction: row;
-     justify-content: space-between;
-     height: 100px;
-     nav{     
-         ul{
-             display: flex;
-             list-style: none;
-             flex-wrap: wrap;
-             justify-content: space-around;
-            flex-direction:row;
+//   @media (min-width: 600px) {
+//      .header {
+//      display: flex;
+//      align-items:center;
+//      flex-direction: row;
+//      justify-content: space-between;
+//      height: 100px;
+//      nav{     
+//          ul{
+//              display: flex;
+//              list-style: none;
+//              flex-wrap: wrap;
+//              justify-content: space-around;
+//             flex-direction:row;
          
-         li{
-             margin: 10px;
+//          li{
+//              margin: 10px;
          
             
 
-             a{
-                 display: flex;
-                 text-decoration: none;
-                 color:$azul-oscuro;
-                 flex-direction:row;
-             }
-         }
-         }    }
- }}
+//              a{
+//                  display: flex;
+//                  text-decoration: none;
+//                  color:$azul-oscuro;
+//                  flex-direction:row;
+//              }
+//          }
+//          }    }
+//  }}
 
     
 
