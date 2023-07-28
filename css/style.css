@@ -4,38 +4,68 @@
   margin: 0;
   padding: 0; }
 
+.header h1 {
+  font-size: 24px;
+  color: aqua; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
 .iconos {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 3fr 1fr;
-  grid-auto-columns: 2fr;
-  gap: 0px 0px;
+  grid-auto-columns: 2px;
+  gap: 30px 10px;
   grid-auto-flow: row;
-  grid-template-areas: "fondo fondo fondo" "horario direccion telefono"; }
+  grid-template-areas: "fondo fondo fondo" "horario direccion telefono";
+  justify-content: start;
+  align-items: center;
+  justify-items: center; }
   .iconos .fondo {
-    grid-area: fondo; }
+    grid-area: fondo;
+    grid-area: fondo;
+    max-width: 100%; }
   .iconos .horario {
+    background-color: aqua;
+    max-width: 100%;
     grid-area: horario; }
   .iconos .direccion {
+    background-color: #ff00cc;
+    max-width: 100%;
     grid-area: direccion; }
   .iconos .telefono {
+    background-color: #dbfcde;
+    max-width: 100%;
     grid-area: telefono; }
-  .iconos h5 {
-    color: #0f0fa6;
-    font-family: "Roboto", sans-serif; }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .iconos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "fondo" "horario" "direccion" "telefono"; }
-    .iconos .horario {
-      grid-column: 1 / 2; } }
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "fondo" "horario" "direccion" "telefono";
+    justify-items: center;
+    align-items: center; }
+  .fondo {
+    overflow-x: hidden;
+    display: block;
+    margin: 0 auto; }
+  .horario {
+    display: grid;
+    overflow: hidden; }
+  .telefono {
+    overflow: hidden; }
+  .direccion {
+    overflow: hidden; } }
 
 .nosotras {
   display: flex;
   align-items: center;
-  background-image: url(https://media.istockphoto.com/id/1370544962/es/foto/fondo-de-papel-blanco-textura-de-cart%C3%B3n-fibroso-para-scrapbooking.jpg?s=612x612&w=0&k=20&c=Z38W9VpkMgSG-hmqYVNpKfcxmPQFKZZDsODhfksInSw=); }
+  background-image: url(https://media.istockphoto.com/id/1370544962/es/foto/fondo-de-papel-blanco-textura-de-cart%C3%B3n-fibroso-para-scrapbooking.jpg?s=612x612&w=0&k=20&c=Z38W9VpkMgSG-hmqYVNpKfcxmPQFKZZDsODhfksInSw=);
+  font-display: unset;
+  background-color: aqua; }
   .nosotras .texto {
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
     transform: rotate(-10deg);
@@ -46,13 +76,24 @@
     font-size: 14px;
     font-display: unset;
     background-color: aqua; }
-  .nosotras .card {
-    max-width: 800px; }
-    .nosotras .card .col-md-4 img.nosImg {
-      transform: rotate(14deg);
-      width: 300px; }
 
-main {
+.card {
+  max-width: 800px;
+  background-image: url(https://media.istockphoto.com/id/1398497933/es/vector/fondo-dental-sin-costuras-para-el-dise%C3%B1o-de-medicamentos-fondo-vectorial-papel-de-envolver.jpg?s=612x612&w=0&k=20&c=zQktl8Q49ecoTw-SIzJuNZZ0Mqk5ELLqDlR---VRQ78=); }
+  .card .col-md-4 img.nosImg {
+    transform: rotate(14deg);
+    width: 300px; }
+
+@media only screen and (max-width: 600px) {
+  .nosotras {
+    flex-direction: column; }
+  .texto {
+    margin: 20px;
+    padding: 20px; }
+  .card {
+    max-width: 100%; } }
+
+.servicios {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -221,21 +262,23 @@ main {
         transition: background-color 0.3s ease; }
 
 @media screen and (max-width: 400px) {
-  .footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .footer .container .footer-row .links {
-      width: 100%; }
-      .footer .container .footer-row .links h2 {
-        display: flex;
-        justify-content: center; }
-    .footer .container .footer-row .whatsapp .redesSociales {
-      text-align: center; }
-    .footer .container .footer-row .footer-row {
-      display: block; }
-    .footer .container .footer-row .redesSociales {
+  .footer {
+    background-size: 100% auto; }
+    .footer .container {
       display: flex;
-      flex-direction: column; }
-      .footer .container .footer-row .redesSociales .redesSociales a {
-        margin: 10px 0; } }
+      flex-direction: column;
+      align-items: center; }
+      .footer .container .footer-row .links {
+        width: 100%; }
+        .footer .container .footer-row .links h2 {
+          display: flex;
+          justify-content: center; }
+      .footer .container .footer-row .whatsapp .redesSociales {
+        text-align: center; }
+      .footer .container .footer-row .footer-row {
+        display: block; }
+      .footer .container .footer-row .redesSociales {
+        display: flex;
+        flex-direction: column; }
+        .footer .container .footer-row .redesSociales .redesSociales a {
+          margin: 10px 0; } }
