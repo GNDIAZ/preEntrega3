@@ -26,7 +26,9 @@
   .iconos .fondo {
     grid-area: fondo;
     grid-area: fondo;
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto;
+    overflow: hidden; }
   .iconos .horario {
     background-color: aqua;
     max-width: 100%;
@@ -53,11 +55,16 @@
     display: block;
     margin: 0 auto; }
   .horario {
-    display: grid;
+    height: auto;
+    max-height: 100%;
     overflow: hidden; }
   .telefono {
+    height: auto;
+    max-height: 100%;
     overflow: hidden; }
   .direccion {
+    height: auto;
+    max-height: 100%;
     overflow: hidden; } }
 
 .nosotras {

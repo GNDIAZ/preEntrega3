@@ -20,7 +20,11 @@
   
     .fondo { grid-area: fondo; 
       grid-area: fondo;
-      max-width: 100%;}
+      max-width: 100%;
+      height: auto;
+      overflow: hidden;
+
+    }
 
 .horario {
   background-color: aqua;
@@ -37,10 +41,12 @@
    grid-area: telefono;
 
 }}
+@mixin responsive-grid{
+  height: auto;
+  max-height: 100%;
+  overflow: hidden;
 
-
-
-
+}
 
 @media screen and (max-width: 600px) {
   .iconos { 
@@ -59,25 +65,18 @@ align-items: center;
   .fondo{
     overflow-x: hidden;
     display: block;
-    
-   
     margin: 0 auto;
   }
-  .horario{
-    display: grid;
-   
-   overflow: hidden;
-   
-   
-   
+  .horario {
+    @include responsive-grid;
   }
-  .telefono{ 
-    overflow: hidden;
+  .telefono{
+    @include responsive-grid;
   }
   .direccion{
-    overflow: hidden;
-  }
-    }
+    @include responsive-grid;
+  
+    }}
   
 
 
@@ -88,10 +87,17 @@ align-items: center;
   align-items: center; 
   background-image: url(https://media.istockphoto.com/id/1370544962/es/foto/fondo-de-papel-blanco-textura-de-cart%C3%B3n-fibroso-para-scrapbooking.jpg?s=612x612&w=0&k=20&c=Z38W9VpkMgSG-hmqYVNpKfcxmPQFKZZDsODhfksInSw=);
 
-  .texto {
-    @each $property, $value in $texto-styles {
-      #{$property}: $value;
-    }
+  .texto { 
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    transform: rotate(-10deg);
+    display: flex;
+    flex: 1;
+    padding: 100px;
+    margin: 100px;
+    font-size: 14px;
+    font-display: unset;
+    background-color: aqua;
+    
   }
    
     font-display: unset;
@@ -140,8 +146,12 @@ max-width: 100%;
   //background: rgb(23, 118, 219);
   background-image: url(https://media.istockphoto.com/id/1370544962/es/foto/fondo-de-papel-blanco-textura-de-cart%C3%B3n-fibroso-para-scrapbooking.jpg?s=612x612&w=0&k=20&c=Z38W9VpkMgSG-hmqYVNpKfcxmPQFKZZDsODhfksInSw=);
 }
-.card {
- @include card-styles;
+.card { 
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+
 }
 
 .card .face {
