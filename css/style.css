@@ -57,15 +57,18 @@
   .horario {
     height: auto;
     max-height: 100%;
-    overflow: hidden; }
+    padding: 0;
+    margin: 0; }
   .telefono {
     height: auto;
     max-height: 100%;
-    overflow: hidden; }
+    padding: 0;
+    margin: 0; }
   .direccion {
     height: auto;
     max-height: 100%;
-    overflow: hidden; } }
+    padding: 0;
+    margin: 0; } }
 
 .nosotras {
   display: flex;
