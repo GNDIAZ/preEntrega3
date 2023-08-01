@@ -1,25 +1,33 @@
  *{
      margin: 0;
      padding: 0;
- }//PAGINA INCIO
-
+ }
+ //PAGINA INCIO
+  
   .header {
-    h1{
-        font-size: 24px;
-        color: aqua;
-    }}
-        //     .logo {
-                    
-       
-        //   .imgLogo{ width: 30px;
+    .navbar-brand{
+        h1{
+            color: $azul-titulo;
+            font-size: 14px;
+        }
+    }
+
+  }
+  
+ 
+
           
-        //   }}}
-        // //   .nombre{
-        // //       color:$azul-celeste;
-        // //       font-family: cursive;}}}
-            
-         
+       
+      
+          
+     
+      
+      
+      
+      
+      
 
-
-
-
+    
+    
+    
+       
