@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Modak&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 * {
@@ -15,39 +14,61 @@
 
 .iconos {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 3fr 1fr;
-  grid-auto-columns: 2px;
-  gap: 30px 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1px;
+  gap: -50px -50px;
   grid-auto-flow: row;
   grid-template-areas: "fondo fondo fondo" "horario direccion telefono";
   justify-content: start;
   align-items: center;
-  justify-items: center; }
-  .iconos h5 {
-    font-size: 15px;
-    color: #4E4FEB; }
+  justify-items: center;
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-blanco-gris-brillante-lineas-onduladas_1017-25101.jpg?w=2000); }
   .iconos .fondo {
-    grid-area: fondo;
     grid-area: fondo;
     max-width: 100%;
     height: auto;
-    overflow: hidden; }
+    overflow: hidden;
+    box-shadow: 10px 10px 20px rgba(15, 15, 15, 0.2); }
   .iconos .horario {
     max-width: 100%;
-    grid-area: horario; }
+    grid-area: horario;
+    padding: 5px;
+    box-shadow: 10px 10px 20px rgba(19, 19, 19, 0.2); }
+    .iconos .horario h5 {
+      font-size: 15px;
+      color: #4E4FEB;
+      margin-top: 10px; }
+    .iconos .horario:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); }
   .iconos .direccion {
+    grid-area: direccion;
     max-width: 100%;
-    grid-area: direccion; }
+    padding: 5px;
+    box-shadow: 10px 10px 20px rgba(19, 19, 19, 0.2); }
+    .iconos .direccion h5 {
+      font-size: 15px;
+      color: #4E4FEB;
+      margin-top: 10px; }
+    .iconos .direccion:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); }
   .iconos .telefono {
     max-width: 100%;
-    grid-area: telefono; }
+    grid-area: telefono;
+    padding: 5px;
+    box-shadow: 10px 10px 20px rgba(19, 19, 19, 0.2); }
+    .iconos .telefono h5 {
+      font-size: 15px;
+      color: #4E4FEB;
+      margin-top: 10px; }
+    .iconos .telefono:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   .iconos {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "fondo" "horario" "direccion" "telefono";
     justify-items: center;
     align-items: center; }
@@ -92,12 +113,13 @@
     transform: rotate(14deg);
     width: 300px; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   .nosotras {
     flex-direction: column; }
   .texto {
     margin: 20px;
-    padding: 20px; }
+    padding: 20px;
+    font-size: 14px; }
   .card {
     max-width: 100%; } }
 
@@ -202,23 +224,21 @@
     margin-bottom: 5px;
     transition: background-color 0.3s ease; }
     .botonTurno input:hover {
-      background-color: lightgray; }
+      background-color: lightgray;
+      border-color: #0f0fa6; }
 
 main.contacto {
   display: flex;
   background-image: url(https://media.istockphoto.com/id/1370544962/es/foto/fondo-de-papel-blanco-textura-de-cart%C3%B3n-fibroso-para-scrapbooking.jpg?s=612x612&w=0&k=20&c=Z38W9VpkMgSG-hmqYVNpKfcxmPQFKZZDsODhfksInSw=); }
 
-/* Estilos para la sección del mapa */
 .verMapa {
   flex: 1; }
 
-/* Estilos para el iframe del mapa */
 .verMapa iframe {
   width: 100%;
   height: 100%;
   border: 0; }
 
-/* Estilos para la sección de dirección */
 .dirCosultorio {
   flex: 1;
   display: flex;
@@ -227,14 +247,13 @@ main.contacto {
   align-items: center;
   text-align: center; }
 
-/* Estilos para el botón */
 .boton {
   background-color: #732cc4; }
 
 .boton a {
   color: white; }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .contacto {
     flex-direction: column;
     align-items: center; }
