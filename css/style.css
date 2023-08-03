@@ -64,7 +64,7 @@
     .iconos .telefono:hover {
       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .iconos {
     display: grid;
     grid-template-columns: 1fr;
@@ -113,7 +113,7 @@
     transform: rotate(14deg);
     width: 300px; }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .nosotras {
     flex-direction: column; }
   .texto {
@@ -253,7 +253,7 @@ main.contacto {
 .boton a {
   color: white; }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .contacto {
     flex-direction: column;
     align-items: center; }
